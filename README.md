@@ -30,3 +30,6 @@
 
 Создана базовая структура проекта.
 
+## Ссылка на опубликованный проект
+
+GitHub Pages: https://gothplug.github.io/kr1_front/
