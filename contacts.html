@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Учебный интернет-магазин">
-    <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
-    <meta property="og:image" content="https://gothplug.github.io/kr1-html-css-shop/images/preview.jpg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Контактная информация учебного интернет-магазина.">
-    <title>Контакты — Учебный интернет-магазин</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  <meta property="og:image" content="https://gothplug.github.io/kr1-html-css-shop/images/preview.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактная информация учебного интернет-магазина.">
+  <title>Контакты — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -20,7 +20,7 @@
         <ul class="site-nav__list">
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакты</a></li>
           <li><a href="index.html#advantages">Преимущества</a></li>
           <li><a href="index.html#popular">Популярные товары</a></li>
           <li><a href="index.html#contacts">Обратная связь</a></li>
@@ -31,8 +31,8 @@
 
   <main>
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-      <a href="index.html">Главная</a>
-      <span>Контакты</span>
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Контакты</span>
     </nav>
 
     <section class="section">
@@ -53,7 +53,7 @@
       <p>
         Для отправки заявки используйте форму в модальном окне на главной странице.
       </p>
-      <a class="button" href="index.html#contacts">Перейти к форме</a>
+      <a class="button button--primary" href="index.html#contacts">Перейти к форме</a>
     </section>
   </main>
 
