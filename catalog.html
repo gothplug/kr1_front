@@ -20,6 +20,7 @@
         <ul class="site-nav__list">
           <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="category.html">Новинки</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
@@ -45,6 +46,17 @@
         подробные карточки.
       </p>
     </section>
+
+    <nav class="catalog-categories" aria-label="Категории товаров">
+      <ul class="catalog-categories__list">
+        <li class="catalog-categories__item">
+          <a class="catalog-categories__link catalog-categories__link--active" href="catalog.html" aria-current="page">Все товары</a>
+        </li>
+        <li class="catalog-categories__item">
+          <a class="catalog-categories__link" href="category.html">Новинки</a>
+        </li>
+      </ul>
+    </nav>
 
     <section class="catalog-layout">
       <aside class="catalog-filters">
@@ -120,6 +132,7 @@
           </article>
 
           <article class="product-card">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
             <h3 class="product-card__title">Товар 5</h3>
             <p class="product-card__description">Краткое описание учебного товара.</p>
             <p class="product-card__price">3000 руб.</p>
@@ -141,6 +154,7 @@
           </article>
 
           <article class="product-card">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
             <h3 class="product-card__title">Товар 8</h3>
             <p class="product-card__description">Краткое описание учебного товара.</p>
             <p class="product-card__price">4500 руб.</p>
