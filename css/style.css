@@ -299,6 +299,17 @@ a:focus-visible {
   background-color: var(--color-success);
 }
 
+/* Изображение карточки */
+.product-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-accent);
+}
+
 .product-card__title {
   margin: 0;
   color: var(--color-text);
@@ -318,9 +329,20 @@ a:focus-visible {
   color: var(--color-danger);
 }
 
+.product-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: auto;
+}
+
 .product-card__button {
   margin-top: auto;
   align-self: flex-start;
+}
+
+.product-card__actions .product-card__button {
+  margin-top: 0;
 }
 
 .aside-info {
@@ -478,6 +500,10 @@ a:focus-visible {
   align-items: start;
 }
 
+.product-detail__media {
+  position: relative;
+}
+
 .product-detail__image {
   display: block;
   width: 100%;
@@ -507,6 +533,29 @@ a:focus-visible {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
+}
+
+.product-detail__meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--color-muted);
+}
+
+.product-detail__list {
+  padding-left: var(--space-lg);
+  margin: 0;
+}
+
+.product-detail__list-item {
+  margin-bottom: var(--space-xs);
+}
+
+.product-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
 }
 
 .product-table {
@@ -541,15 +590,79 @@ a:focus-visible {
    =============================== */
 
 .order-dialog {
+  position: relative;
   z-index: 100;
   width: min(100% - 32px, 560px);
   padding: var(--space-lg);
   border: none;
   border-radius: var(--radius-lg);
+  animation: dialog-appear 0.2s ease-out;
 }
 
 .order-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
+  animation: backdrop-appear 0.2s ease-out;
+}
+
+@keyframes dialog-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backdrop-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Кнопка закрытия модального окна */
+.order-dialog__close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--color-muted);
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.order-dialog__close:hover {
+  color: var(--color-white);
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.order-dialog__close:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.order-dialog__title {
+  margin: 0 var(--space-xl) var(--space-xs) 0;
+}
+
+.order-dialog__hint {
+  margin: 0 0 var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
 }
 
 /* Форма */

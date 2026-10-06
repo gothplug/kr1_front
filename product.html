@@ -40,30 +40,48 @@
     </nav>
 
     <article class="product-detail">
-      <img
-        class="product-detail__image"
-        src="images/product-1.svg"
-        alt="Учебное изображение товара 1"
-        width="600"
-        height="400"
-      >
+      <div class="product-detail__media">
+        <img
+          class="product-detail__image"
+          src="images/product-1.svg"
+          alt="Учебное изображение товара 1"
+          width="600"
+          height="400"
+        >
+        <span class="product-card__badge product-card__badge--hit">Хит</span>
+      </div>
 
       <div class="product-detail__info">
         <h1 class="product-detail__title">Товар 1</h1>
         <p class="product-detail__description">
-          Краткое описание учебного товара. Товар используется в качестве примера
-          для отработки семантической разметки, таблицы характеристик и кнопки заявки.
+          Учебный товар из каталога. Используется как пример для отработки
+          семантической разметки, таблицы характеристик и оформления заявки.
         </p>
+
+        <ul class="product-detail__meta">
+          <li class="product-detail__meta-item">Артикул: ТВ-0001</li>
+          <li class="product-detail__meta-item">Наличие: на складе</li>
+          <li class="product-detail__meta-item">Оценка покупателей: 4,8 из 5</li>
+        </ul>
+
         <p class="product-detail__price">Цена: 1000 руб.</p>
-        <a class="button button--primary product-detail__button" href="order.html">
-          Оформить заявку
-        </a>
+
+        <div class="product-detail__actions">
+          <a class="button button--primary product-detail__button" href="order.html">
+            Оформить заявку
+          </a>
+          <a class="button button--secondary product-detail__button" href="catalog.html">
+            Вернуться в каталог
+          </a>
+        </div>
       </div>
     </article>
 
     <section class="section">
+      <h2>Характеристики товара</h2>
+
       <table class="product-table">
-        <caption>Характеристики товара</caption>
+        <caption>Основные параметры</caption>
         <thead>
           <tr>
             <th scope="col">Параметр</th>
@@ -76,6 +94,10 @@
             <td>Учебный товар</td>
           </tr>
           <tr>
+            <td>Артикул</td>
+            <td>ТВ-0001</td>
+          </tr>
+          <tr>
             <td>Цена</td>
             <td>1000 руб.</td>
           </tr>
@@ -83,9 +105,76 @@
             <td>Наличие</td>
             <td>В наличии</td>
           </tr>
+          <tr>
+            <td>Материал</td>
+            <td>Учебный материал</td>
+          </tr>
+          <tr>
+            <td>Габариты</td>
+            <td>200 × 150 × 50 мм</td>
+          </tr>
+          <tr>
+            <td>Вес</td>
+            <td>0,4 кг</td>
+          </tr>
+          <tr>
+            <td>Гарантия</td>
+            <td>12 месяцев</td>
+          </tr>
         </tbody>
       </table>
     </section>
+
+    <section class="section">
+      <h2>Комплектация</h2>
+
+      <ul class="product-detail__list">
+        <li class="product-detail__list-item">Основной товар — 1 шт.</li>
+        <li class="product-detail__list-item">Инструкция — 1 шт.</li>
+        <li class="product-detail__list-item">Упаковка — 1 шт.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Сравнение тарифов доставки</h2>
+
+      <table class="product-table">
+        <caption>Тарифы доставки</caption>
+        <thead>
+          <tr>
+            <th scope="col">Тариф</th>
+            <th scope="col">Срок</th>
+            <th scope="col">Стоимость</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Самовывоз</td>
+            <td>в день заявки</td>
+            <td>бесплатно</td>
+          </tr>
+          <tr>
+            <td>Курьер по городу</td>
+            <td>1–2 дня</td>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <td>Доставка по региону</td>
+            <td>3–5 дней</td>
+            <td>600 руб.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside class="aside-info">
+      <h2>Условия возврата</h2>
+      <p>
+        Товар можно вернуть в течение 14 дней после получения, если сохранены
+        упаковка и комплектация. Для оформления возврата свяжитесь с нами
+        через форму на странице «Контакты».
+      </p>
+    </aside>
   </main>
 
   <footer>
