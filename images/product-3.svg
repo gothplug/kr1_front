@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Учебное изображение товара 3">
+  <rect width="600" height="400" fill="#fdeef0"/>
+  <rect x="20" y="20" width="560" height="360" fill="none" stroke="#b00020" stroke-width="2" stroke-dasharray="8 6" opacity="0.5"/>
+  <circle cx="300" cy="160" r="70" fill="#b00020" opacity="0.15"/>
+  <text x="300" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#b00020">Товар 3</text>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#666666">Учебное изображение товара</text>
+</svg>
